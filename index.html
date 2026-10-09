@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkup Lite — Support</title>
+<style>
+  :root { --ink:#14231f; --muted:#4a635c; --bg:#f3f7f5; --card:#fff; --line:rgba(20,35,31,.12); --sea:#1f6f63; }
+  @media (prefers-color-scheme: dark) { :root { --ink:#e8efec; --muted:#a9bdb6; --bg:#121716; --card:#1b2422; --line:rgba(255,255,255,.12); --sea:#6fc3b4; } }
+  body { margin:0; background:var(--bg); color:var(--ink); font: 17px/1.55 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 20px 64px; }
+  h1 { font-size: 2rem; margin: 0 0 .25rem; } h2 { font-size: 1.2rem; margin: 2rem 0 .5rem; }
+  p, li { color: var(--muted); } a { color: var(--sea); }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 14px; padding: 18px 20px; margin: 16px 0; }
+  code { background: rgba(127,127,127,.15); padding: 1px 5px; border-radius: 5px; font-size: .95em; }
+  nav a { margin-right: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="./">Support</a><a href="privacy.html">Privacy policy</a></nav>
+  <h1>Checkup Lite</h1>
+  <p>A plain checkup for your Mac: see where the space went, keep a free-space target, and clear caches safely. Published by MoleCare LTD.</p>
+
+  <div class="card">
+    <h2 style="margin-top:0">Get help</h2>
+    <p>Open an issue at <a href="https://github.com/YauhenBichel/checkup-support/issues">github.com/YauhenBichel/checkup-support/issues</a>. Say what you expected, what happened, and your macOS version. Answers usually come within a few days.</p>
+  </div>
+
+  <h2>Common questions</h2>
+  <div class="card">
+    <p><strong>Why does the app ask me to choose my home folder?</strong><br>
+    Mac App Store apps run in a sandbox and can only read folders you grant. Checkup Lite asks once, in the standard macOS panel, and remembers the choice. It only reads sizes there.</p>
+    <p><strong>What can it remove?</strong><br>
+    Only a fixed list of cache and build folders (for example <code>~/Library/Caches/&lt;tool&gt;</code>, <code>~/.cache/&lt;tool&gt;</code>, Xcode DerivedData). Each removal is confirmed by you and goes to the Trash, so you can put it back until you empty the Trash. Documents, photos, projects, mail and messages are never touched.</p>
+    <p><strong>Why does “Needs your decision” only offer Reveal in Finder?</strong><br>
+    Those folders may hold your own data. Checkup shows them and leaves the decision to you, in Finder.</p>
+    <p><strong>What is Preview mode?</strong><br>
+    A rehearsal: every step of a plan is simulated and reported, and no file is changed.</p>
+    <p><strong>Does anything leave my Mac?</strong><br>
+    No. The optional Assistant sends a short text summary of your scan only to the AI provider you connect yourself. See the <a href="privacy.html">privacy policy</a>.</p>
+    <p><strong>Where are the logs?</strong><br>
+    <code>~/Library/Logs/Checkup/actions.jsonl</code> records every removal; the Activity section shows the same in plain words.</p>
+  </div>
+</main>
+</body>
+</html>
