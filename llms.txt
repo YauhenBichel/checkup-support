@@ -1,0 +1,12 @@
+# Checkup Lite support
+
+> Support and privacy pages for Checkup Lite, a Mac App Store app that shows where disk space went on your Mac, keeps a free-space target and clears caches safely. Published by MoleCare LTD.
+
+## Pages
+
+- [Support and common questions](https://yauhenbichel.github.io/checkup-support/): how to get help, what the app can remove, what Preview mode is, where the logs are
+- [Privacy policy](https://yauhenbichel.github.io/checkup-support/privacy.html): what data the app reads and what leaves your Mac
+
+## Report a problem
+
+- [GitHub issues](https://github.com/YauhenBichel/checkup-support/issues)
